@@ -1,0 +1,94 @@
+.sectionPrice {
+  background-image: url("../../image/bgimgprice-2x.png");
+  background-color: var(--secondary-text-color);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  min-height: 100vh;
+}
+@media screen and (max-width: 767px) {
+  .sectionPrice {
+    padding: 60px 20px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .sectionPrice {
+    padding: 60px 43px;
+  }
+}
+.mastersWrapper {
+  display: flex;
+  justify-content: center;
+}
+.text {
+  display: flex;
+  align-items: center;
+  color: var(--hero-text-color);
+  font-size: 18px;
+  line-height: 1.67;
+  letter-spacing: 0.02em;
+}
+.text::before {
+  display: inline-block;
+  content: "";
+  width: 60px;
+  height: 1px;
+  margin-right: 20px;
+  background-color: var(--hero-text-color);
+}
+@media screen and (max-width: 479px) {
+  .priceTitle {
+    font-size: 30px;
+  }
+}
+@media screen and (min-width: 480px) and (max-width: 767px) {
+  .priceTitle {
+    font-size: 40px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .priceTitle {
+    font-size: 60px;
+  }
+}
+.priceTitle {
+  display: flex;
+  justify-content: center;
+
+  color: var(--white-color);
+}
+
+@media screen and (max-width: 479px) {
+  .listWrapper {
+    font-size: 9px;
+    margin-bottom: 100px;
+  }
+}
+@media screen and (min-width: 480px) and (max-width: 767px) {
+  .listWrapper {
+    font-size: 17px;
+    margin-bottom: 100px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .listWrapper {
+    font-size: 24px;
+  }
+}
+
+.priceList {
+  color: var(--text-color-list);
+  line-height: 1.67;
+  letter-spacing: 0.02em;
+}
+.priceItem {
+  display: flex;
+  align-items: center;
+  gap: 60px;
+}
+
+.value {
+  margin-left: auto;
+  text-align: center;
+}

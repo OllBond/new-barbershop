@@ -1,0 +1,45 @@
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: var(--background-color-masters);
+  z-index: 999;
+}
+.modal {
+  border-radius: 20px;
+  background-color: #fff;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+@media screen and (max-width: 767px) {
+  .modal {
+    width: 100%;
+  }
+}
+@media screen and (min-width: 768px) {
+  .modal {
+    padding: 30px;
+    min-height: 500px;
+    min-width: 500px;
+  }
+}
+
+.close {
+  font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+  color: var(--primary-text-color);
+  font-size: 18px;
+  font-weight: bold;
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  cursor: pointer;
+}
+.close:hover,
+.close:focus {
+  color: var(--accent-color);
+}

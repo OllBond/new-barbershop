@@ -1,0 +1,33 @@
+.titleForm {
+  text-align: center;
+}
+.fieldWrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 75px;
+}
+@media screen and (max-width: 767px) {
+  .fieldWrapper {
+    padding: 20px;
+  }
+}
+.input {
+  width: 100%;
+  background-color: transparent;
+  /* color: var(--white-color); */
+  border-top: none;
+  border-right: none;
+  border-left: none;
+  border-bottom: 1px solid rgba(157, 164, 189, 0.4);
+  outline: none;
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    border-bottom 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+input::placeholder {
+  font-weight: 600;
+  font-size: 11px;
+  line-height: 1.364;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+}
