@@ -1,9 +1,6 @@
 import { NavLink } from "react-router-dom";
 
 import LogoIcon from "../../icons/LogoIcon";
-// import Navigation from "./Navigation/Navigation";
-
-// import css from "./navbar.module.css";
 
 // MUI
 import * as React from "react";
@@ -96,7 +93,17 @@ const NavBar = () => {
                 ))}
               </Menu>
             </Box>
-            <Box sx={{ flexGrow: 1, display: { xs: "none", md: "flex" } }}>
+            <Box
+              sx={{
+                flexGrow: 1,
+                display: {
+                  xs: "none",
+                  md: "flex",
+                  justifyContent: "center",
+                  gap: "200px",
+                },
+              }}
+            >
               {pages.map((page) => (
                 <Button
                   key={page}
@@ -108,7 +115,12 @@ const NavBar = () => {
                   }}
                 >
                   <NavLink
-                    style={{ textDecoration: "none", color: "black" }}
+                    style={{
+                      textDecoration: "none",
+                      color: "var(--primary-text-color)",
+                      fontWeight: "bold",
+                      fontSize: "19px",
+                    }}
                     to={`/${page}`}
                   >
                     {page}

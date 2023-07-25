@@ -1,7 +1,7 @@
 import { Formik, Form, Field, ErrorMessage } from "formik";
 import { object, string } from "yup";
 
-import Button from "../../shared/components/Button/Button";
+import ButtonOnline from "../../shared/components/ButtonOnline/ButtonOnline";
 
 import css from "./online-register-form.module.css";
 import styled from "styled-components";
@@ -66,7 +66,7 @@ const OnlineRegisterForm = () => {
             rows="4"
           ></Field>
           <ErrorMessage name="message" component="div" />
-          <Button text="ВІДПРАВИТИ" type="submit" />
+          <ButtonOnline text="ВІДПРАВИТИ" type="submit" />
         </div>
       </Form>
     </Formik>

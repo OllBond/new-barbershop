@@ -1,6 +1,6 @@
 import css from "./button.module.css";
 
-const Button = ({ text, openModal }) => {
+const ButtonOnline = ({ text, openModal }) => {
   return (
     <div>
       <button className={css.btn} onClick={openModal} type="submit">
@@ -9,4 +9,4 @@ const Button = ({ text, openModal }) => {
     </div>
   );
 };
-export default Button;
+export default ButtonOnline;

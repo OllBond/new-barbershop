@@ -1,6 +1,6 @@
 import { useState, useCallback } from "react";
 
-import Button from "../../shared/components/Button/Button";
+import ButtonOnline from "../../shared/components/ButtonOnline/ButtonOnline";
 import Modal from "../../shared/components/ModalWindow/ModalWindow";
 import OnlineRegisterForm from "../OnlineRegisterForm/OnlineRegisterForm";
 
@@ -56,7 +56,7 @@ const PriceList = () => {
             </li>
           </ul>
         </div>
-        <Button text="ОНЛАЙН-ЗАПИС" openModal={openModal} />
+        <ButtonOnline text="ОНЛАЙН-ЗАПИС" openModal={openModal} />
         {showModal && (
           <Modal close={closeModal}>
             <OnlineRegisterForm />
